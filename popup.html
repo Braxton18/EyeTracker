@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eye Tracker Heatmap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Eye Tracker Heatmap</h1>
+    <div class="button-container">
+        <button id="startButton" class="buttonStartEyeTrack" type="button">Start Eye Tracking</button>
+    </div>
+
+    <div id="heatmapContainer" style="position: relative; width: 800px; height: 600px; margin-top: 20px;">
+        <img id="backgroundImage" style="position: absolute; width: 800px; height: 600px;">
+        <canvas id="heatmapCanvas" width="800" height="600" style="position: absolute;"></canvas>
+    </div>
+
+    <script src="js/GazeCloudAPI.js"></script>
+    <script src="js/heatmapLive.js"></script>
+    <script src="heatmap.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>
